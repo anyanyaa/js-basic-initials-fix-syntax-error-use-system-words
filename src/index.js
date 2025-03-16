@@ -26,29 +26,26 @@ function askInfoNumber(message) {
   return +number;
 }
 
-
-function questioner(){
+function questioner() {
   const name = askInfo('Enter your name');
-  if(name === null){
-    alert('You cancelled')
-    return
+  if (name === null) {
+    alert('You cancelled');
+    return;
   }
 
   const lastName = askInfo('Enter your last name');
-  if(lastName === null){
-    alert('You cancelled')
-    return
+  if (lastName === null) {
+    alert('You cancelled');
+    return;
   }
 
   const age = askInfoNumber('Enter your age');
-  if(age === null){
-    alert('You cancelled')
-    return
+  if (age === null) {
+    alert('You cancelled');
+    return;
   }
 
   alert(`Hi ${name} ${lastName}, your age is ${age}`);
-
 }
 
-questioner()
-
+questioner();
